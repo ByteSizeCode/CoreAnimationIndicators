@@ -56,7 +56,7 @@ class ViewController: UIViewController {
         replicator.instanceDelay = delay
         replicator.addSublayer(square) //Add square to replicator for duplication
         replicator.instanceTransform = CATransform3DMakeTranslation(70, 0, 0) //Move each copy of the square by specified amount from previous square
-        replicator.instanceBlueOffset = -0.5 //Make each copy of the square less blue than the previous upon duplicated
+        replicator.instanceBlueOffset = -0.5 //Make each copy of the square less blue than the previous upon duplication
         
         view.layer.addSublayer(replicator) //Add the replicator's processes (the squares and their animations) to the view
     }
